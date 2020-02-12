@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TestNG-Suite-using-Groups-for-Rest-Assured-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin" >
+<test name="User-Blog-Tests-using-Groups-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin" >
+ 
+<listeners>
+<listener class-name="com.qatest.TrackTestExecution_Testng_Listener"></listener>
+</listeners> 
+  
+  
+  <packages>
+  <package name="com.qatest"></package>
+  </packages>
+  
+  <groups>
+       <run>
+       <include name="User_Blog_users_list_search"></include>
+       <include name="User_Blog_posts_list_search"></include>
+       <include name="User_Blog_comments_list_search"></include>
+       <include name="Email_Start_Syntax_validation"></include>
+       <include name="Email_End_Syntax_validation"></include>
+       </run>
+  </groups>
+      
+ 
+  </test>
+  </suite>
+  

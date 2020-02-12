@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG-Suite-using-Groups-for-Rest-Asurred-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin]">
+  <listeners>
+    <listener class-name="com.qatest.TrackTestExecution_Testng_Listener"/>
+  </listeners>
+  <test name="User-Blog-Tests-using-Groups-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin(failed)">
+    <groups>
+      <run>
+        <include name="User_Blog_users_list_search"/>
+        <include name="User_Blog_posts_list_search"/>
+        <include name="User_Blog_comments_list_search"/>
+        <include name="Email_Start_Syntax_validation"/>
+        <include name="Email_End_Syntax_validation"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments">
+        <methods>
+          <include name="Test_5_Email_End_Syntax_validation_for_Email_id_0_Comment_id_101_Postid_21_by_user_Samantha"/>
+        </methods>
+      </class> <!-- com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments -->
+    </classes>
+  </test> <!-- User-Blog-Tests-using-Groups-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin(failed) -->
+</suite> <!-- Failed suite [TestNG-Suite-using-Groups-for-Rest-Asurred-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin] -->
