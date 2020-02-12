@@ -5,15 +5,18 @@ version: 2
        - image: circleci/ruby:2.4.1
      steps:
        - checkout
-       - run:      
-tests:
-  - name: User-Blog-Tests-using-Classes-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin
-    classes:
-      - com.qatest.Test1_user_blog_search_user_Samantha
-      - com.qatest.Test2_user_blog_search_posts_by_user_Samantha
-      - com.qatest.Test3a_user_blog_search_comments_by_user_Samantha
-      - com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments
-      - com.qatest.Test1_user_blog_search_user_Samantha
-      - com.qatest.Test2_user_blog_search_posts_by_user_Samantha
-      - com.qatest.Test3a_user_blog_search_comments_by_user_Samantha
-      - com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments
+       - run:   
+       
+       tests:
+       
+     - name: User-Blog-Tests-using-Classes-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin
+       classes:
+      - test.listeners.com.qatest.TrackTestExecution_Testng_Listener
+      - test.com.qatest.Test1_user_blog_search_user_Samantha
+      - test.com.qatest.Test2_user_blog_search_posts_by_user_Samantha
+      - test.com.qatest.Test3a_user_blog_search_comments_by_user_Samantha
+      - test.com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments
+     
+
+  
+  
