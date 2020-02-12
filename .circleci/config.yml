@@ -1,11 +1,8 @@
-name: TestNG-Suite-using-Classes-for-Rest-Assured-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin
-configFailurePolicy: skip
-listeners:
-  - com.qatest.TrackTestExecution_Testng_Listener
-tests:
-  - name: User-Blog-Tests-using-Classes-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin
-    classes:
-      - com.qatest.Test1_user_blog_search_user_Samantha
-      - com.qatest.Test2_user_blog_search_posts_by_user_Samantha
-      - com.qatest.Test3a_user_blog_search_comments_by_user_Samantha
-      - com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments
+version: 2
+ jobs:
+   build:
+     docker:
+       - image: circleci/ruby:2.4.1
+     steps:
+       - checkout
+       - run: echo "A first hello"
