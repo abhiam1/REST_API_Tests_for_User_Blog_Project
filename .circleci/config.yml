@@ -1,3 +1,12 @@
+version: 2.1
+
+orbs:
+  maven: circleci/maven@0.0.12
+
+workflows:
+  maven_test:
+    jobs:
+      - maven/test # checkout, build, test, and upload test results
 name: TestNG-Suite-using-Classes-for-Rest-Assured-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin
 configFailurePolicy: skip
 listeners:
