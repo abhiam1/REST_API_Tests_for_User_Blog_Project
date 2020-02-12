@@ -5,10 +5,8 @@ version: 2
        - image: circleci/ruby:2.4.1
      steps:
        - checkout
-       - run:   
-       
-       tests:
-       
+       - run:       
+       tests:       
      - name: User-Blog-Tests-using-Classes-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin
        classes:
       - test.listeners.com.qatest.TrackTestExecution_Testng_Listener
