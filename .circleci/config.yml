@@ -1,4 +1,3 @@
-
 name: TestNG-Suite-using-Classes-for-Rest-Assured-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin
 configFailurePolicy: skip
 listeners:
