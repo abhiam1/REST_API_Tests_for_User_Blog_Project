@@ -1,35 +1,24 @@
 package com.qatest;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
 import io.restassured.http.ContentType;
 import io.restassured.parsing.Parser;
 
-import static org.hamcrest.Matchers.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static io.restassured.RestAssured.given;
-
-import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
-import java.util.concurrent.TimeUnit;
+
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
+
+@Listeners (TrackTestExecution_Testng_Listener.class)
 
 /*******************************************************
  * Test 1 - Search for the username = Samantha 
