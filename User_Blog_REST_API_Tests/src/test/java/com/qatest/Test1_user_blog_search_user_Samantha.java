@@ -4,17 +4,12 @@ import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.parsing.Parser;
-
 import io.restassured.response.Response;
-
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
-
-
 import java.util.List;
 
 
