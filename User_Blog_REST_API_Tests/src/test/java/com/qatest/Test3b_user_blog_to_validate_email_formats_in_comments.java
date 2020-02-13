@@ -93,9 +93,7 @@ public class Test3b_user_blog_to_validate_email_formats_in_comments {
    		                                           containsString("@rod.us"),
    		                                           containsString("@rod.co.uk"),
    		                                           containsString("@rod.biz")));
-	   
-	   
-	   	   
+		   	   
 		   
 		    Object actualString = null;
 			Object expectedString = null;
@@ -109,15 +107,11 @@ public class Test3b_user_blog_to_validate_email_formats_in_comments {
 	   System.out.println("\n <<<<<<<<<<  Result of Test 5 is as below = >>>>>>>>>> ");
 		System.out.println("\n Test 5 - is Pass since End syntax for Email-id-0 in Comment_id_101 of Postid_21 by user Samantha is found matching with the generic top-level domains (gTLD) like - ( .com/.org/.net/.de/.us/.co.uk/ .biz/ )");
 	   
-	   
-		
+	   	
 	   
 	  }	
 	
 	
-	
-	
-
 	private Object given1() {
 		// TODO Auto-generated method stub
 		return null;
