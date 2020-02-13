@@ -1,20 +1,36 @@
 version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/ruby:2.4.1
-     steps:
-       - checkout
-       - run:       
-       tests:       
-     - name: User-Blog-Tests-using-Classes-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin
-       classes:
-      - test.listeners.com.qatest.TrackTestExecution_Testng_Listener
-      - test.com.qatest.Test1_user_blog_search_user_Samantha
-      - test.com.qatest.Test2_user_blog_search_posts_by_user_Samantha
-      - test.com.qatest.Test3a_user_blog_search_comments_by_user_Samantha
-      - test.com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments
-     
+jobs:
+  test:
+    docker:
+      - image: circleci/openjdk:<9.0-jdk>
+    steps:
+      - checkout
+      run: mvn dependency:go-offline # gets the project dependencies
+      run:
+          name: Download Selenium
+          command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+      - run:
+          name: Start Selenium
+          command: java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
+          background: true
+      - run: 
+           name : testng
+           command : java -jar testng-6.8.8 -log test-reports/testng.log
+      - run: 
+           name : testng suite
+           command : java -cp https://github.com/abhiam1/REST_API_Tests_for_User_Blog_Project/blob/master/User_Blog_REST_API_Tests/testng_classes_suite.xml
+           
+workflows:
+  version: 2
+  run_test:
+    jobs:
+      - classes:
+      - test.listeners.User_Blog_REST_API_Tests.src.test.java.com.qatest.TrackTestExecution_Testng_Listener
+      - test.User_Blog_REST_API_Tests.src.test.java.com.qatest.Test1_user_blog_search_user_Samantha
+      - test.User_Blog_REST_API_Tests.src.test.java.com.qatest.Test2_user_blog_search_posts_by_user_Samantha
+      - test.User_Blog_REST_API_Tests.src.test.java.com.qatest.Test3a_user_blog_search_comments_by_user_Samantha
+      - test.User_Blog_REST_API_Tests.src.test.java.com.qatest.Test3b_user_blog_to_validate_email_formats_in_comments
 
-  
-  
+
+
+    
