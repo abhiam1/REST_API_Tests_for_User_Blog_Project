@@ -2,46 +2,9 @@ package com.qatest;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
-import io.restassured.http.ContentType;
-import io.restassured.matcher.ResponseAwareMatcher;
-import io.restassured.parsing.Parser;
-
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.beans.HasPropertyWithValue.hasProperty;
-import static org.testng.Assert.fail;
 import static org.hamcrest.Matchers.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static io.restassured.RestAssured.given;
-
-import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
-import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestSpecification;
-
-import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.AssertJUnit;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
-
-import java.util.concurrent.TimeUnit;
-import java.util.List;
-
-import org.hamcrest.Matcher;
-import org.hamcrest.Matchers;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 
 @Listeners (TrackTestExecution_Testng_Listener.class)
 
@@ -132,7 +95,6 @@ public class Test3b_user_blog_to_validate_email_formats_in_comments {
    		                                           containsString("@rod.biz")));
 	   
 	   
-	 // Assert.fail("Test is failing");
 	   	   
 		   
 		    Object actualString = null;
@@ -147,9 +109,7 @@ public class Test3b_user_blog_to_validate_email_formats_in_comments {
 	   System.out.println("\n <<<<<<<<<<  Result of Test 5 is as below = >>>>>>>>>> ");
 		System.out.println("\n Test 5 - is Pass since End syntax for Email-id-0 in Comment_id_101 of Postid_21 by user Samantha is found matching with the generic top-level domains (gTLD) like - ( .com/.org/.net/.de/.us/.co.uk/ .biz/ )");
 	   
-	   // to add comment for "Else" failure test case as 
-	   // Failed test case because - The domain name .tv for Email id [0] is the Internet country code top-level domain (ccTLD) for Tuvalu and not the accepted/pass generic top-level domain (gTLD)
-        
+	   
 		
 	   
 	  }	
