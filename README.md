@@ -30,28 +30,32 @@ I have focused on completing following test tasks which ensures complete proof o
 
 For designing of the test cases for the Restful API tests we have implemented the best coding practices like DRY , KISS , YAGNI , SOC and SOLID as below - 
 
-DRY - “Dont repeat yourself” principle 
+         DRY - “Dont repeat yourself” principle 
 We have implemented DRY best practise for the Listener class called the  “TrackTestExecution_Testng_Listener”  in the test case solution. This Listener class is called within all the test classes to keep a watch for failed test cases and display a message for failed test case in the test reports for better information to the test engineer for further analysis.
 
-KISS - “Keep it simple Stupid” principle    
+          KISS - “Keep it simple Stupid” principle    
 
 The KISS principle has been applied to all of the test cases as follows - 
 
-Each test case has been assigned to a separate test class , so each test case can be worked on separately in case of test design issues or modifications by the test engineer without hampering the task of remaining test cases execution and this updated test class can be integrated later with the remaining test suite when complete. 
-We have created a very modular test execution structure by creating a “Classes based TestNG suite” and also a “Groups based TestNG suite” . 
-The advantage of this is that based on the test cycle requirements , specific test groups or test classes can be added or removed from the T Best suite quickly to achieve better test coverage and test cycle focus as essential. It also allows for quick isolated troubleshooting in case of any errors in the test case , by removing that specific class / group from the suite & continuing with the execution of the remaining suite . 
-Additionally the TRY-CATCH routine which gives a failed test case output message to the eclipse console directly for further analysis by the test engineer has been implemented for only the failing test case 5) of Email End syntax mismatch as a proof of concept (PoC) . This can also be implemented for other test cases as required .  
-I have validated as a proof of concept (PoC) 1 email id from among 50 total email ids , to be validated for the email syntax validation. This 1 verification of Email id [0] within Comment id - 101 in Post id - 21 by username - Samantha has been successfully accomplished as per the KISS principle. Similarly all 49 remaining email ids can also be verified using similar test logic with changes in just the email id contents to be validated . 
-The missing requirements of email id start and end syntax have been assumed based upon 4 types of standard Starting syntax for Emails like - (name@ / name.city@ / name_city@ / name-city@ / ) while 7 types of standard Ending syntax of emails for generic top-level domains (gTLD) ( .com/.org/.net/.de/.us/.co.uk/ .biz/ ) as per the KISS principle.
-Wherever required , messages have been added within the test case classes as well as for the test case outputs appearing on console and reports for better information to the test engineer and all the product stakeholders & for ease of troubleshooting and test maintenance later .  
+1 - Each test case has been assigned to a separate test class , so each test case can be worked on separately in case of test design issues or modifications by the test engineer without hampering the task of remaining test cases execution and this updated test class can be integrated later with the remaining test suite when complete. 
 
-YAGNI - “You are not going to need it “ principle  
+2- We have created a very modular test execution structure by creating a “Classes based TestNG suite” and also a “Groups based TestNG suite” . The advantage of this is that based on the test cycle requirements , specific test groups or test classes can be added or removed from the T Best suite quickly to achieve better test coverage and test cycle focus as essential. It also allows for quick isolated troubleshooting in case of any errors in the test case , by removing that specific class / group from the suite & continuing with the execution of the remaining suite . 
+
+3- Additionally the TRY-CATCH routine which gives a failed test case output message to the eclipse console directly for further analysis by the test engineer has been implemented for only the failing test case 5) of Email End syntax mismatch as a proof of concept (PoC) . This can also be implemented for other test cases as required .  
+
+4- I have validated as a proof of concept (PoC) 1 email id from among 50 total email ids , to be validated for the email syntax validation. This 1 verification of Email id [0] within Comment id - 101 in Post id - 21 by username - Samantha has been successfully accomplished as per the KISS principle. Similarly all 49 remaining email ids can also be verified using similar test logic with changes in just the email id contents to be validated . 
+
+5- The missing requirements of email id start and end syntax have been assumed based upon 4 types of standard Starting syntax for Emails like - (name@ / name.city@ / name_city@ / name-city@ / ) while 7 types of standard Ending syntax of emails for generic top-level domains (gTLD) ( .com/.org/.net/.de/.us/.co.uk/ .biz/ ) as per the KISS principle.
+
+6- Wherever required , messages have been added within the test case classes as well as for the test case outputs appearing on console and reports for better information to the test engineer and all the product stakeholders & for ease of troubleshooting and test maintenance later .  
+
+             YAGNI - “You are not going to need it “ principle  
 
 For implementing this best practice , i have done away with any unrequired imports or classes or additional dependencies of any sort .
 No junk code or unused junk statements are kept back in the class files . 
 
 
-SOC - “ Separation of Concerns “ & the SOLID - principle of “Single   
+              SOC - “ Separation of Concerns “ & the SOLID - principle of “Single   
                           Responsibility” 
     
 This refers to “ doing just one thing well “  . For implementing this best practice of SOC and SOLID , 
