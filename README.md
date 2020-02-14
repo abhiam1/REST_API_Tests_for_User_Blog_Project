@@ -2,7 +2,7 @@
 [![CircleCI](https://circleci.com/gh/abhiam1/REST_API_Tests_for_User_Blog_Project.svg?style=svg)](https://circleci.com/gh/abhiam1/REST_API_Tests_for_User_Blog_Project)
 
 
-User Blog API Tests - using Rest Assured + Test NG by Abhijit Malankar - MSc Engg TU Berlin - Feb 2020 
+       Title - User Blog API Tests - using Rest Assured + Test NG + Maven - by Abhijit Malankar - MSc Engg TU Berlin - Feb 2020 
  
      A) Essential Test Set up Requirements for Testing this folder is  
  
@@ -70,7 +70,11 @@ Testng Test Reports can be observed in 3 locations after the test is run (+ file
       b) Index.html - open with web browser
       c) Console messages
       
-Example reports have been uploaded in the repository as well .     
+Example reports have been uploaded in the repository as well .    
+
+               F) Circle CI integration 
+               
+   For continuos integration we have integrated the Circle CI tool and created a config.yml file in the root of this repository. Further integration steps for this Circle CI tool are in process at the moment.              
 
 In case of any questions , please get in touch on email - abhiam1@gmail.com or skype - abhiam11 
      
