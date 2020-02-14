@@ -12,7 +12,9 @@
 4) Access to User Blog API published here: https://jsonplaceholder.typicode.com/ 
 5) GIT Hub & Circle CI login  access 
 
-      B) About the Test cases in the repository Test Solutions folder location REST_API_Tests_for_User_Blog_Project/User_Blog_REST_API_Tests/src/test/java/com/qatest/ 
+      B) About the Test cases in the repository 
+      
+      Test Solutions folder location - REST_API_Tests_for_User_Blog_Project/User_Blog_REST_API_Tests/src/test/java/com/qatest/ 
 I have focused on completing following test tasks which ensures complete proof of concept (PoC) & modular implementation of the TestNG + Rest Assured API based automation tests , which can be easily scaled up further -
 1) Test 1 -Search for user - Samantha is executed as per the requirements document
 2) Test 2 - Search for posts by user - Samantha is executed as per the requirements
