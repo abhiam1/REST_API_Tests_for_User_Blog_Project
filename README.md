@@ -11,7 +11,8 @@ User Blog API Tests - using Rest Assured + Test NG by Abhijit Malankar - MSc Eng
 3) Test NG ( with Class based Testng Suite xml + Groups based Testng Suite xml + Maven Library ( updated POM.xml ) 
 4) Access to User Blog API published here: https://jsonplaceholder.typicode.com/ 
 5) GIT Hub & Circle CI login  access 
-About the Test cases in the repository Test Solutions folder location REST_API_Tests_for_User_Blog_Project/User_Blog_REST_API_Tests/src/test/java/com/qatest/ 
+
+      B) About the Test cases in the repository Test Solutions folder location REST_API_Tests_for_User_Blog_Project/User_Blog_REST_API_Tests/src/test/java/com/qatest/ 
 I have focused on completing following test tasks which ensures complete proof of concept (PoC) & modular implementation of the TestNG + Rest Assured API based automation tests , which can be easily scaled up further -
 1) Test 1 -Search for user - Samantha is executed as per the requirements document
 2) Test 2 - Search for posts by user - Samantha is executed as per the requirements
@@ -22,7 +23,7 @@ I have focused on completing following test tasks which ensures complete proof o
 8) Similarly remaining email ids , i.e.Email id [1] to Email id [4] for Comment id - 102 to Comment id - 105 within Post id - 21 by username - Samantha can be validated . This can be further scaled up to cover Post id - 22 to Post id - 30 by username - Samantha.
 
 
-          B) Implementation of best coding practices like DRY , KISS , YAGNI , SOC and SOLID.
+          C) Implementation of best coding practices like DRY , KISS , YAGNI , SOC and SOLID.
 
 For designing of the test cases for the Restful API tests we have implemented the best coding practices like DRY , KISS , YAGNI , SOC and SOLID as below - 
 
@@ -41,20 +42,20 @@ I have validated as a proof of concept (PoC) 1 email id from among 50 total emai
 The missing requirements of email id start and end syntax have been assumed based upon 4 types of standard Starting syntax for Emails like - (name@ / name.city@ / name_city@ / name-city@ / ) while 7 types of standard Ending syntax of emails for generic top-level domains (gTLD) ( .com/.org/.net/.de/.us/.co.uk/ .biz/ ) as per the KISS principle.
 Wherever required , messages have been added within the test case classes as well as for the test case outputs appearing on console and reports for better information to the test engineer and all the product stakeholders & for ease of troubleshooting and test maintenance later .  
 
-      3) YAGNI - “You are not going to need it “ principle  
+YAGNI - “You are not going to need it “ principle  
 
 For implementing this best practice , i have done away with any unrequired imports or classes or additional dependencies of any sort .
 No junk code or unused junk statements are kept back in the class files . 
 
 
-       4)  SOC - “ Separation of Concerns “ & the SOLID - principle of “Single   
+SOC - “ Separation of Concerns “ & the SOLID - principle of “Single   
                           Responsibility” 
     
 This refers to “ doing just one thing well “  . For implementing this best practice of SOC and SOLID , 
 We have separated each test case into different class and different groups as well , so that a test engineer is able to focus on just one functionality at a time for test development and maintenance , without obstructing the execution of a complete test suite during a regression on a smoke test cycle using the classes / groups based testng test suites available . 
     
   
-C)  Test NG based classes suite as well as Test NG based groups suite : 
+             D)  Test NG based classes suite as well as Test NG based groups suite : 
 
 For ease of test execution and troubleshooting , i have implemented both classes and groups based test suites .xml files which are available in the GITHUB repository here - 
 https://github.com/abhiam1/REST_API_Tests_for_User_Blog_Project/tree/master/User_Blog_REST_API_Tests 
@@ -62,7 +63,7 @@ https://github.com/abhiam1/REST_API_Tests_for_User_Blog_Project/tree/master/User
 As TestNG - Test Suite - can be run by - Right Click on the Testng.xml file in this folder and selecting to "run as a Test NG suite" which is a test suite made combining classes or Groups. 
 
 
-D) Reports 
+               E) Reports 
 
 Testng Test Reports can be observed in 3 locations after the test is run (+ file/refresh) within the Test-Output sub folder  
       a) emailable-report.html  - open with web browser
