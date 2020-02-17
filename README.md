@@ -9,6 +9,7 @@
 1) Eclipse IDE with JRE system library JAVA SE 1.8 
 2) Rest Assured Library 
 3) Test NG ( with Class based Testng Suite xml + Groups based Testng Suite xml + Maven Library ( updated POM.xml ) 
+   TestNG requires JDK 7 or higher. 
 4) Access to User Blog API published here: https://jsonplaceholder.typicode.com/ 
 5) GIT Hub & Circle CI login  access 
 
