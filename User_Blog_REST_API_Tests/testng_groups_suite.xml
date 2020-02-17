@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="TestNG-Suite-using-Groups-for-Rest-Assured-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin" >
+<suite name="TestNG-Suite-using-Groups-for-Rest-Assured-API-based-user-blog-tests-for-user-Samantha-by-Abhijit_Malankar_MScEngg_TU_Berlin" parallel="classes" verbose="2" > 
 <test name="User-Blog-Tests-using-Groups-based-TestNG-Suite-by-Abhijit_Malankar_MScEngg_TU_Berlin" >
  
 <listeners>
