@@ -4,7 +4,9 @@
 
        Title - User Blog API Tests - using Rest Assured + Test NG + Maven - by Abhijit Malankar - MSc Engg TU Berlin - Feb 2020 
  
-          A) Essential Test Set up Requirements for Testing this folder is  
+        
+          
+           A) Essential Test Set up Requirements for Testing this folder is  
  
 1) Eclipse IDE with JRE system library JAVA SE 1.8 
 2) Rest Assured Library 
