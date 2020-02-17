@@ -32,7 +32,7 @@ I have focused on completing following test tasks which ensures complete proof o
 For designing of the test cases for the Restful API tests I have implemented the best coding practices like DRY , KISS , YAGNI , SOC and SOLID as below - 
 
          DRY - “Dont repeat yourself” principle 
-We have implemented DRY best practise for the Listener class called the  “TrackTestExecution_Testng_Listener”  in the test case solution. This Listener class is called within all the test classes to keep a watch for failed test cases and display a message for failed test case in the test reports for better information to the test engineer for further analysis.
+I have implemented DRY best practise for the Listener class called the  “TrackTestExecution_Testng_Listener”  in the test case solution. This Listener class is called within all the test classes to keep a watch for failed test cases and display a message for failed test case in the test reports for better information to the test engineer for further analysis.
 
           KISS - “Keep it simple Stupid” principle    
 
