@@ -62,7 +62,13 @@ No junk code or unused junk statements are kept back in the class files .
                           Responsibility” 
     
 This refers to “ doing just one thing well “  . For implementing this best practice of SOC and SOLID , 
-We have separated each test case into different class and different groups as well , so that a test engineer is able to focus on just one functionality at a time for test development and maintenance , without obstructing the execution of a complete test suite during a regression on a smoke test cycle using the classes / groups based testng test suites available . 
+
+
+1-I have separated each test case into different class and different groups as well , so that a test engineer is able to focus on just one functionality at a time for test development and maintenance , without obstructing the execution of a complete test suite during a regression on a smoke test cycle using the classes or groups based testng test suites available . 
+
+2-Also to make the run cycle faster for classes or groups based testng test suites available , the following paramater of <parallel="classes"> is set which allows creation of parallel threads for faster execution in Testng 
+
+3-The parameter of <verbose="2"> is set to display more detailed console messages for the test engineer to troubleshooting & maintenance. 
     
   
              D)  Test NG based classes suite as well as Test NG based groups suite : 
